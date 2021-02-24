@@ -1,0 +1,54 @@
+.usersWrapper {
+  margin: 10px 10px 0px 10px;
+  opacity: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  border-radius: 30px;
+  font-size: 12px;
+}
+.avatar span {
+  background-color: #948a76;
+}
+
+.appear {
+  opacity: 1;
+}
+
+.users {
+  height: 90px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 5px;
+  border: solid 1px white;
+  justify-items: center;
+  align-items: center;
+  background: #d9d9d9;
+
+  border-radius: 32px;
+}
+.usersLink {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.users div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}

@@ -1,0 +1,32 @@
+.message {
+  width: 100%;
+  min-height: 100px;
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px rgb(0 0 0 / 8%);
+}
+.message div {
+  width: 100%;
+}
+.message .viewed {
+  text-align: center;
+}
+.message .name,
+.body {
+  padding-left: 15px;
+}
+
+.myMessage {
+  background: #ccced0;
+}
+.friendMessage {
+  background: rgb(24 144 255 / 14%);
+}
+.message .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

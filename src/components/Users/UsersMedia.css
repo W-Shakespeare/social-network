@@ -1,0 +1,318 @@
+@media (max-width: 1338px) {
+  .usersWrapper {
+    grid-template-columns: 520px 520px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .usersWrapper {
+    grid-template-columns: 500px 500px;
+  }
+}
+
+@media (max-width: 1233px) {
+  .usersWrapper {
+    grid-template-columns: 470px 470px;
+  }
+}
+
+@media (max-width: 1174px) {
+  .usersWrapper {
+    grid-template-columns: 430px 430px;
+  }
+}
+
+@media (max-width: 1094px) {
+  .usersWrapper {
+    grid-template-columns: 400px 400px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .usersWrapper {
+    grid-template-columns: 370px 370px;
+  }
+}
+
+@media (max-width: 977px) {
+  .usersWrapper {
+    grid-template-columns: 340px 340px;
+  }
+  .users {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 977px) {
+  .usersWrapper {
+    grid-template-columns: 640px;
+  }
+  .users {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 876px) {
+  .usersWrapper {
+    grid-template-columns: 610px;
+  }
+}
+
+@media (max-width: 836px) {
+  .usersWrapper {
+    grid-template-columns: 580px;
+  }
+}
+
+@media (max-width: 809px) {
+  .usersWrapper {
+    grid-template-columns: 550px;
+  }
+}
+
+@media (max-width: 772px) {
+  .usersWrapper {
+    grid-template-columns: 510px;
+  }
+  .messages textarea {
+    width: 92% !important;
+    margin-left: 13px !important;
+  }
+}
+
+@media (max-width: 732px) {
+  .usersWrapper {
+    grid-template-columns: 480px;
+  }
+  .messages textarea {
+    width: 89% !important;
+    margin-left: 10px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .usersWrapper {
+    grid-template-columns: 450px;
+  }
+  .messages textarea {
+    width: 87% !important;
+    margin-left: 9px !important;
+  }
+}
+
+@media (max-width: 665px) {
+  .usersWrapper {
+    grid-template-columns: 420px;
+  }
+  .messages textarea {
+    width: 85% !important;
+    margin-left: 8px !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .usersWrapper {
+    grid-template-columns: 390px;
+  }
+  .users .ant-btn {
+    width: 65px;
+  }
+  .users .ant-btn span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 610px) {
+  .usersWrapper {
+    grid-template-columns: 360px;
+  }
+  .users {
+    font-size: 11px;
+  }
+  .users .ant-btn {
+    width: 63px;
+  }
+  .ant-btn span {
+    font-size: 11px;
+  }
+
+  .ant-layout-sider {
+    flex: none !important;
+    min-width: min-content !important;
+    max-width: min-content !important;
+    /* width: auto !important; */
+  }
+  .ant-menu {
+    width: 171px;
+  }
+
+  .dialogsWrapper .ant-avatar {
+    height: 28px;
+    width: 28px;
+  }
+}
+
+@media (max-width: 578px) {
+  .usersWrapper {
+    grid-template-columns: 330px;
+  }
+  .users {
+    font-size: 11px;
+  }
+  .users .ant-btn {
+    width: 62px;
+  }
+  .ant-btn span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 546px) {
+  .usersWrapper {
+    grid-template-columns: 300px;
+  }
+  .users {
+    font-size: 11px;
+  }
+  .users .ant-btn {
+    width: 61px;
+  }
+  .ant-btn span {
+    font-size: 12px;
+  }
+
+  .ant-menu {
+    width: 160px;
+  }
+}
+
+@media (max-width: 494px) {
+  .usersWrapper {
+    grid-template-columns: 280px;
+  }
+  .users {
+    font-size: 10px;
+  }
+  .users .ant-btn {
+    width: 59px;
+  }
+  .ant-btn span {
+    font-size: 10px;
+  }
+
+  .ant-menu {
+    width: 150px;
+  }
+  .dialogsWrapper .ant-avatar {
+    height: 26px;
+    width: 26px;
+    /* margin-left: 4px; */
+  }
+  .dialogsWrapper .name {
+    margin-left: 6px;
+  }
+}
+
+@media (max-width: 459px) {
+  .usersWrapper {
+    grid-template-columns: 400px;
+  }
+  .users {
+    font-size: 11px;
+  }
+  .users .ant-btn {
+    width: 64px;
+  }
+  .ant-btn span {
+    font-size: 11px;
+  }
+  .ant-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .ant-menu {
+    width: 100vw;
+  }
+  .ant-menu-item {
+    text-align: center;
+  }
+  .header {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .header .ant-btn {
+    width: 120px;
+    height: 40px;
+  }
+  .ant-avatar {
+    height: 45px;
+    width: 45px;
+  }
+  .messagesWrapper .ant-avatar {
+    height: 30px;
+    width: 30px;
+  }
+  .ant-layout-content {
+    width: 100%;
+  }
+  .messages textarea {
+    width: 123% !important;
+    margin-left: 10px !important;
+  }
+  .dialog .photo {
+    padding-left: 7px;
+  }
+}
+
+@media (max-width: 423px) {
+  .usersWrapper {
+    grid-template-columns: 370px;
+  }
+}
+
+@media (max-width: 387px) {
+  .usersWrapper {
+    grid-template-columns: 340px;
+  }
+  .ant-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px !important;
+  }
+}
+
+@media (max-width: 353px) {
+  .header .ant-btn {
+    width: 100px;
+    height: 35px;
+  }
+  .header .ant-avatar {
+    height: 37px;
+    width: 37px;
+  }
+  .usersWrapper {
+    grid-template-columns: 310px;
+  }
+  .users {
+    font-size: 10px;
+  }
+  .ant-menu-item {
+    height: 30px !important;
+  }
+}
+
+@media (max-width: 323px) {
+  .usersWrapper {
+    grid-template-columns: 290px;
+  }
+  .users {
+    font-size: 10px;
+  }
+  .ant-menu-item {
+    height: 29px !important;
+  }
+}

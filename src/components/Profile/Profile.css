@@ -1,0 +1,167 @@
+.Profile {
+  display: grid;
+  grid-template-rows: 350px repeat(6, 1fr);
+  justify-items: center;
+  align-items: center;
+  opacity: 0;
+}
+.Profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos {
+  margin-bottom: 10px;
+}
+.changePhotoFile {
+  margin-bottom: 10px;
+}
+.Profile span {
+  margin-bottom: 10px;
+}
+.Profile p {
+  padding-bottom: 10px;
+}
+.appear {
+  opacity: 1;
+}
+
+.fullName {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.aboutMe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lookingForAJob {
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lookingForAJobDescription {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #c5c5c5;
+}
+.profileForm textarea {
+  background-color: gainsboro;
+  color: gray;
+}
+.example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edite {
+  font-size: 22px;
+  color: gray;
+}
+.edite:hover {
+  color: rgb(184, 199, 212);
+}
+.profileForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profileForm input::placeholder {
+  color: rgb(148, 147, 147);
+}
+.profileForm input {
+  color: gray;
+  margin: 5px 0px;
+  width: 100%;
+  background: gainsboro;
+}
+.profileSendMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  background: gray;
+  border-radius: 20px;
+}
+.profileSendMessage a {
+  color: white;
+}
+.profileSendMessage a:hover {
+  color: burlywood;
+}
+.errorMessages {
+  padding: 5px;
+  background: rgb(240, 89, 89);
+}
+
+.input__wrapper {
+  width: 100%;
+  position: relative;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.input__file-icon-wrapper {
+  height: 60px;
+  width: 60px;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-right: 1px solid #fff;
+}
+
+.input__file-button-text {
+  line-height: 1;
+  margin-top: 1px;
+}
+
+.input__file-button {
+  width: 100%;
+  max-width: 290px;
+  height: 60px;
+  background: #1bbc9b;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 auto;
+}

@@ -1,0 +1,107 @@
+html,
+body,
+p {
+  margin: 0;
+  font-family: "Lucida Sans Regular";
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border: solid 2px white;
+  border-radius: 8px;
+}
+
+header {
+  grid-area: header;
+  background-color: gray;
+}
+
+nav {
+  grid-area: nav;
+  background-color: black;
+}
+
+.main {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ant-layout {
+  padding: 0px !important;
+}
+.ant-layout-content {
+  padding: 0px !important;
+  /* margin: 0px 10px; */
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px calc(1fr-80px);
+
+  grid-template-areas:
+    "header header"
+    "nav main";
+}
+a {
+  text-decoration: none !important;
+  list-style: none !important;
+  color: black;
+}
+ul,
+li {
+  list-style: none !important;
+}
+.ant-menu {
+  background: gainsboro;
+
+  border-right: solid 2px #c8c8c8 !important;
+}
+.ant-layout {
+  background: rgb(0 0 0 / 8%) !important;
+}
+
+#components-layout-demo-top-side-2 .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ant-row-rtl #components-layout-demo-top-side-2 .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+.site-layout-background {
+  background: #6a6a6bde;
+}
+.startPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-spin-dot-item {
+  background-color: grey;
+}
+.footer {
+  width: 100%;
+  height: 70px;
+  background-color: gainsboro;
+}
