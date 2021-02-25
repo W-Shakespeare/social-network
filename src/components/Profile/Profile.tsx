@@ -19,6 +19,7 @@ interface IProps {
   sendProfileForm: (profileFormData: IFormProps) => void;
   backToProfileData: () => void;
   profile: ProfileObjType | null;
+  profilePhotoSetIsFetching: boolean;
 }
 
 const Profile: React.FC<IProps> = React.memo(
@@ -34,6 +35,7 @@ const Profile: React.FC<IProps> = React.memo(
     backToProfileData,
     profile,
     appear,
+    profilePhotoSetIsFetching,
   }) => {
     console.log("isOwnerID".toUpperCase(), isOwnerID);
     {
@@ -57,6 +59,7 @@ const Profile: React.FC<IProps> = React.memo(
             goToEditeMode={goToEditeMode}
             sendPhotoSelected={sendPhotoSelected}
             appear={appear}
+            profilePhotoSetIsFetching={profilePhotoSetIsFetching}
           />
         )}
       </>

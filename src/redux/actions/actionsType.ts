@@ -22,6 +22,7 @@ import {
   SET_USERS_PAGE_PAGINATION,
   SET_SELECTED_KEYS,
   SET_CURRENT_DIALOG,
+  CHANGE_PROFILE_PHOTO_SET_IS_FETCHING,
 } from "../types/types";
 
 export type AddUsersActionType = {
@@ -114,6 +115,11 @@ export type SetCurrentDialogActionType = {
   currentDialog: any;
 };
 
+export type ChangeProfilePhotoSetIsFetchingActionType = {
+  type: typeof CHANGE_PROFILE_PHOTO_SET_IS_FETCHING;
+  toggle: boolean;
+};
+
 export type UsersReducerActionTypes =
   | AddUsersActionType
   | UsersSetIsFetchingActionType
@@ -126,7 +132,8 @@ export type ProfileReducerActionTypes =
   | ClearProfileActionType
   | ClearProfileHeaderPhotosActionType
   | SetEditeModeActionType
-  | ProfileSetErrorMessagesActionType;
+  | ProfileSetErrorMessagesActionType
+  | ChangeProfilePhotoSetIsFetchingActionType;
 
 export type AuthorizationReducerActionTypes = AuthorizationActionType;
 export type SetSelectedKeysReducerActionType = SetSelectedKeysActionType;

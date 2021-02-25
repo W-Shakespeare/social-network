@@ -13,7 +13,12 @@
 }
 
 .photos {
+  width: 220px;
+  height: 230px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .changePhotoFile {
   margin-bottom: 10px;

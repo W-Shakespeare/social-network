@@ -12,6 +12,7 @@ import {
   setEditeMode,
   profileSetErrorMessages,
   clearProfileHeaderPhotos,
+  changeProfilePhotoSetIsFetching,
 } from "../actions/actions";
 import {
   AuthorizationReducerActionTypes,
@@ -57,7 +58,8 @@ export const getUsersData = (
 export const getProfileData = (
   id: number | null,
   isOwnerID: boolean,
-  headerPhotoInit: boolean
+  headerPhotoInit: boolean,
+  changeProfilePhoto: boolean = false
 ) => (dispatch: Dispatch<ProfileReducerActionTypes>) => {
   dispatch(profileSetIsFetching(true));
 
@@ -66,6 +68,7 @@ export const getProfileData = (
     //if isOwnerID false don`t change headerPhoto in header
     dispatch(setProfile(res, isOwnerID, headerPhotoInit));
     dispatch(setEditeMode(false));
+    changeProfilePhoto && dispatch(changeProfilePhotoSetIsFetching(false));
     dispatch(profileSetIsFetching(false));
   });
 };
@@ -198,10 +201,11 @@ export const sendProfilePhotoData = (
   profilePhotoFile: File,
   id: number | null
 ) => async (dispatch: Dispatch<any | ProfileReducerActionTypes>) => {
+  dispatch(changeProfilePhotoSetIsFetching(true));
   let res = await API.sendPhoto(profilePhotoFile);
   console.log("PHOTO_RES", res);
   if (res.data.resultCode == 0) {
-    dispatch(getProfileData(id, true, false));
+    dispatch(getProfileData(id, true, false, true));
   } else {
     let { messages } = res.data;
     dispatch(profileSetErrorMessages(res));

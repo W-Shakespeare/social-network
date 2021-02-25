@@ -15,6 +15,7 @@ import {
   SET_USERS_PAGE_PAGINATION,
   SET_SELECTED_KEYS,
   SET_CURRENT_DIALOG,
+  CHANGE_PROFILE_PHOTO_SET_IS_FETCHING,
 } from "../types/types";
 import {
   ProfileObjType,
@@ -39,6 +40,7 @@ import {
   SetUsersPagePaginationActionType,
   SetSelectedKeysActionType,
   SetCurrentDialogActionType,
+  ChangeProfilePhotoSetIsFetchingActionType,
 } from "./actionsType";
 
 export const addUsers = (users: {
@@ -155,4 +157,11 @@ export const setCurrentDialog = (
 ): SetCurrentDialogActionType => ({
   type: SET_CURRENT_DIALOG,
   currentDialog,
+});
+
+export const changeProfilePhotoSetIsFetching = (
+  toggle: boolean
+): ChangeProfilePhotoSetIsFetchingActionType => ({
+  type: CHANGE_PROFILE_PHOTO_SET_IS_FETCHING,
+  toggle,
 });

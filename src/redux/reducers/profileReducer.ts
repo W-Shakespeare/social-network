@@ -5,6 +5,7 @@ import {
   SET_EDITE_MODE_PROFILE,
   PROFILE_SET_ERROR_MESSAGES,
   CLEAR_PROFILE_HEADER_PHOTOS,
+  CHANGE_PROFILE_PHOTO_SET_IS_FETCHING,
 } from "../types/types";
 import { ProfileObjType } from "../../type";
 import { ProfileReducerActionTypes } from "../actions/actionsType";
@@ -15,6 +16,7 @@ interface InitialStateType {
   isEditeMode: boolean;
   errorMessages: any;
   headerPhotos: null | string;
+  profilePhotoSetIsFetching: boolean;
 }
 
 const initialState: InitialStateType = {
@@ -23,6 +25,7 @@ const initialState: InitialStateType = {
   isEditeMode: false,
   errorMessages: null,
   headerPhotos: null,
+  profilePhotoSetIsFetching: false,
 };
 
 function profileReducer(
@@ -62,6 +65,11 @@ function profileReducer(
       return {
         ...state,
         errorMessages: action.messages,
+      };
+    case CHANGE_PROFILE_PHOTO_SET_IS_FETCHING:
+      return {
+        ...state,
+        profilePhotoSetIsFetching: action.toggle,
       };
 
     default:

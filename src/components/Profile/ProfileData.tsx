@@ -3,6 +3,7 @@ import { EditOutlined } from "@ant-design/icons";
 import Avatar from "../Avatar/Avatar";
 import { NavLink } from "react-router-dom";
 import { ProfileObjType } from "../../type";
+import { Spin } from "antd";
 
 interface IProps {
   goToEditeMode: () => void;
@@ -12,6 +13,7 @@ interface IProps {
   ) => void;
   appear: boolean;
   contacts: any;
+  profilePhotoSetIsFetching: boolean;
 }
 
 const ProfileData: React.FC<ProfileObjType & IProps> = ({
@@ -26,13 +28,16 @@ const ProfileData: React.FC<ProfileObjType & IProps> = ({
   sendPhotoSelected,
   appear,
   contacts,
+  profilePhotoSetIsFetching,
 }) => {
-  console.log(contacts);
   return (
     <div className={`Profile ${appear ? "appear" : false}`}>
       <div className="photos">
         {!photos ? (
           <Avatar size={220} />
+        ) : (!photos && profilePhotoSetIsFetching) ||
+          (photos && profilePhotoSetIsFetching) ? (
+          <Spin className="example" size="small" />
         ) : (
           <Avatar src={photos.large} size={220} />
         )}

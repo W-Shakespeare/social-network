@@ -26,9 +26,13 @@ const ProfileContainer: React.FC = () => {
     (state: RootState) => state.authorization.isAuthorization
   );
   let isOwnerID = !id;
-  let { profile, isFetching, isEditeMode, errorMessages } = useSelector(
-    (state: RootState) => state.profile
-  );
+  let {
+    profile,
+    isFetching,
+    isEditeMode,
+    errorMessages,
+    profilePhotoSetIsFetching,
+  } = useSelector((state: RootState) => state.profile);
   const [appear, setAppear] = useState(false);
   const dispatch = useDispatch();
   const goToEditeMode = () => {
@@ -76,6 +80,7 @@ const ProfileContainer: React.FC = () => {
         profile={profile}
         isFetching={isFetching}
         appear={appear}
+        profilePhotoSetIsFetching={profilePhotoSetIsFetching}
       />
     </>
   );
