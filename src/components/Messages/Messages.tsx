@@ -11,6 +11,7 @@ interface IProps {
   messages: Array<MessagesObjType> | null | any;
   sendMessageToFriend: (messageText: string) => void;
   ref: any;
+  smallPhoto: string;
 }
 
 const Messages: React.FC<IProps> = React.memo(
@@ -37,6 +38,7 @@ const Messages: React.FC<IProps> = React.memo(
                   key={message.id}
                   name={message.senderName}
                   {...message}
+                  photo={props.smallPhoto}
                 />
               );
             })}

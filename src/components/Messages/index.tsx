@@ -18,6 +18,7 @@ const MessagesContainer: React.FC = () => {
     (state: RootState) => state.messages.messagesWithCurrentFriend,
     deepEqual
   );
+  const { currentDialog } = useSelector((state: RootState) => state.dialogs);
   const messagesAnchorRef = useRef<HTMLDivElement>(null);
   const login = useSelector((state: RootState) => state.authorization.login);
   const dispatch = useDispatch();
@@ -55,6 +56,7 @@ const MessagesContainer: React.FC = () => {
       sendMessageToFriend={sendMessageToFriend}
       messages={messages}
       ref={messagesAnchorRef}
+      smallPhoto={!currentDialog ? "" : currentDialog.photos.small}
     />
   );
 };

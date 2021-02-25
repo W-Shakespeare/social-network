@@ -27,6 +27,7 @@ export type DialogsObjType = {
   lastDialogActivityDate: string;
   lastUserActivityDate: string;
   newMessagesCount: number;
+  photos: { small: string; large: string };
 };
 
 export type MessagesObjType = {
