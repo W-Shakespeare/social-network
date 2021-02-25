@@ -1,12 +1,14 @@
 .message {
+  position: relative;
   width: 100%;
   min-height: 100px;
   max-height: max-content;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border: solid 2px rgb(0 0 0 / 8%);
+  color: rgb(0 0 0 / 45%);
 }
 .message div {
   width: 100%;
@@ -14,11 +16,13 @@
 .message .viewed {
   text-align: center;
 }
-.message .name,
-.body {
+.message .body {
   padding-left: 15px;
 }
-
+.message .name {
+  text-align: center;
+  margin-top: 5px;
+}
 .myMessage {
   background: #ccced0;
 }
@@ -26,7 +30,35 @@
   background: rgb(24 144 255 / 14%);
 }
 .message .avatar {
+  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.wrapperBodyMessage {
+  display: flex;
+  flex-direction: column;
+}
+.wrapperAvatar {
+  margin: 5px;
+  width: 80px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* .anticon {
+  position: absolute;
+} */
+.view1 {
+  position: absolute;
+  bottom: 5px;
+  left: calc(50% - 4px);
+  color: white;
+}
+.view2 {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  color: white;
 }

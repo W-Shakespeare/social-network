@@ -74,40 +74,40 @@
   .usersWrapper {
     grid-template-columns: 510px;
   }
-  .messages textarea {
+  /* .messages textarea {
     width: 92% !important;
     margin-left: 13px !important;
-  }
+  } */
 }
 
 @media (max-width: 732px) {
   .usersWrapper {
     grid-template-columns: 480px;
   }
-  .messages textarea {
+  /* .messages textarea {
     width: 89% !important;
     margin-left: 10px !important;
-  }
+  } */
 }
 
 @media (max-width: 700px) {
   .usersWrapper {
     grid-template-columns: 450px;
   }
-  .messages textarea {
+  /* .messages textarea {
     width: 87% !important;
     margin-left: 9px !important;
-  }
+  } */
 }
 
 @media (max-width: 665px) {
   .usersWrapper {
     grid-template-columns: 420px;
   }
-  .messages textarea {
+  /* .messages textarea {
     width: 85% !important;
     margin-left: 8px !important;
-  }
+  } */
 }
 
 @media (max-width: 639px) {
@@ -232,6 +232,7 @@
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
+    overflow-x: hidden;
   }
   .ant-menu {
     width: 100vw;
@@ -258,12 +259,15 @@
   .ant-layout-content {
     width: 100%;
   }
-  .messages textarea {
+  /* .messages textarea {
     width: 123% !important;
     margin-left: 10px !important;
-  }
+  } */
   .dialog .photo {
     padding-left: 7px;
+  }
+  .messages form {
+    width: 100% !important;
   }
 }
 
