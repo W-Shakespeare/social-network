@@ -22,7 +22,9 @@ export const Dialog: React.FC<IProps> = ({
         <Avatar src={large} />
       </div>
       <div className="name">{userName}</div>
-      <div className="messageStatus">New Messages - {newMessagesCount}</div>
+      <div className="messageStatus">
+        New Messages - {hasNewMessages ? newMessagesCount : 0}
+      </div>
     </div>
   );
 };
