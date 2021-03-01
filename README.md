@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# social-network
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+If do you want to login 
 
-## Available Scripts
+email - free@samuraijs.com
+password - free
 
-In the project directory, you can run:
+This is a free account and it has a limit on the number of requests(20 in hour)
+if you exceed the limit, the server will stop responding
 
-### `npm start`
+I made a redirect to the Login page if you are not logged in you cannot view pages except PageError
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+PageError is a demo page for the ErrorBoundary component. I did error on this page. 
+I made a HOC and connected each page (Users, Profile, Dialogs, Messages) to ErrorBoundary
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+Login page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![alt tag](https://github.com/W-Shakespeare/img/blob/main/image_2021-03-01_09-58-53.png "Описание будет тут")
 
-### `npm run build`
+Success login
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![alt tag](https://github.com/W-Shakespeare/img/blob/main/image_2021-03-01_09-59-38.png "Описание будет тут")
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This moment change header photo, and logout
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Before
 
-### `npm run eject`
+![alt tag](https://github.com/W-Shakespeare/img/blob/main/pBefore.png "Описание будет тут")
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+After
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![alt tag](https://github.com/W-Shakespeare/img/blob/main/afterP.png "Описание будет тут")
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Before
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![alt tag](https://github.com/W-Shakespeare/img/blob/main/bBefore.png "Описание будет тут")
 
-## Learn More
+After
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![alt tag](https://github.com/W-Shakespeare/img/blob/main/bAfter.png "Описание будет тут")
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Failed login
 
-### Code Splitting
+![alt tag](https://github.com/W-Shakespeare/img/blob/main/image_2021-03-01_09-59-10.png "Failed login")
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Users page
 
-### Analyzing the Bundle Size
+![alt tag](https://github.com/W-Shakespeare/img/blob/main/image_2021-03-01_09-58-20.png "Описание будет тут")
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Profile page
 
-### Making a Progressive Web App
+![alt tag](https://github.com/W-Shakespeare/img/blob/main/image_2021-03-01_09-56-00.png "Описание будет тут")
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If do you want change photo you will see small spin
 
-### Advanced Configuration
+![alt tag](https://github.com/W-Shakespeare/img/blob/main/image_2021-03-01_10-15-36.png "Описание будет тут")
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Edit profile page
 
-### Deployment
+![alt tag](https://github.com/W-Shakespeare/img/blob/main/image_2021-03-01_09-56-49.png "Описание будет тут")
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Dialogs page
 
-### `npm run build` fails to minify
+![alt tag](https://github.com/W-Shakespeare/img/blob/main/image_2021-03-01_09-39-57.png "Описание будет тут")
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Messages page
+
+![alt tag](https://github.com/W-Shakespeare/img/blob/main/image_2021-03-01_09-55-25.png "Описание будет тут")
+
+
+
+
