@@ -44,7 +44,9 @@ const Login: React.FC<InjectedFormProps<IFormProps, IOwnProps> & IOwnProps> = ({
           }
           placeholder="password"
         ></Field>
-        <Field name="rememberMe" component={ACheckbox} type="checkbox" />
+        <Field name="rememberMe" component={ACheckbox} type="checkbox">
+          Remember me
+        </Field>
         <Button htmlType="submit" type="ghost">
           Send
         </Button>
